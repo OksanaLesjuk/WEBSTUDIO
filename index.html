@@ -406,13 +406,38 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
       </div>
     </div>
   </footer>
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop " data-modal>
     <div class="modal">
       <button type="button" class="modal-close-button" data-modal-close>
         <svg class="modal-close-icon">
           <use href="./images/sprite.svg#icon-close-black"></use>
         </svg>
       </button>
+      <form class="modal-form">
+        <p class="modal-call">Leave your contacts and we will call you back</p>
+        <lable class="modal-field">
+          <span class="modal-field-desk">Name</span>
+          <input class="modal-field-input" type="text" name="user-name" required pattern="[a-zA-Z]+">
+        </lable>
+          <lable class="modal-field">
+          <span class="modal-field-desk">Phone</span>
+          <input class="modal-field-input" type="tel" name="user-phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+        </lable>
+          <lable class="modal-field">
+          <span class="modal-field-desk">Email</span>
+          <input class="modal-field-input" type="email" name="user-email" required>
+        </lable>
+          <lable class="modal-field">
+          <span class="modal-field-desk">Comment</span>
+          <textarea class="modal-field-comment"
+          name="user-comment" placeholder="Text input"></textarea>
+        </lable>
+        <input id="modal-privacy-policy" type="checkbox" class="modal-check">
+        <label for="modal-privacy-policy" class="modal-check-desk" name="privacy-policy">I accept the terms and conditions of the <a href="">Privacy Policy</a> </label>
+
+        <button class="modal-form-btn" type="submit">Send</button>
+      </form>
+
     </div>
   </div>
   <script src="./js/modal.js"></script>
