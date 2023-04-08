@@ -369,10 +369,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
       </p>
     </div>
 
-
-
     <div class="footer-social">
-      <h4 class="footer-social-title text">Social media</h4>
+      <h4 class="footer-title text">Social media</h4>
       <ul class="footer-social-list list">
         <li class="social-list-item">
           <a href="" class="social-list-link footer-link link">
@@ -404,10 +402,21 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         </li>
       </ul>
     </div>
+
+    <form class="footer-subscribe-form">
+      <h4 class="footer-title">Subscribe</h4>
+      <div class="footer-subscribe-wrap"><input class="footer-input" type="email" name="user-email" placeholder="E-mail" required>
+        <button type="button" class="footer-button">Subscribe
+          <svg class="footer-button-icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-subscribe"></use>
+          </svg>
+        </button></div>
+    </form>
   </div>
 </footer>
-<div class="backdrop " data-modal>
-  <div class="modal">
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal ">
     <button type="button" class="modal-close-button" data-modal-close>
       <svg class="modal-close-icon">
         <use href="./images/sprite.svg#icon-close-black"></use>
