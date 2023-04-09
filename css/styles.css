@@ -385,7 +385,6 @@ nav {
 }
 .footer-container {
   display: flex;
- 
 }
 .footer-logo {
   display: block;
@@ -442,51 +441,47 @@ nav {
 .footer-subscribe-wrap {
   display: flex;
   gap: 24px;
-  
 }
 
 .footer-input {
-
   width: 264px;
   height: 40px;
 
-  border: 1px solid #FFFFFF;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
   outline: none;
 
   font-size: 16px;
   color: #000;
   padding-left: 16px;
-
 }
 
 .footer-button {
   display: flex;
   align-items: center;
-justify-content: center;
-gap: 16px;
+  justify-content: center;
+  gap: 16px;
 
   width: 165px;
   height: 40px;
   padding: 8px 24px;
 
   font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: #FFFFFF;
-border-radius: 4px;
-background-color: var(--accent-color);
-border-color: transparent;
-transition: background-color var(--transition-duration-funktion);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  border-color: transparent;
+  transition: background-color var(--transition-duration-funktion);
 }
 
 .footer-button:hover,
 .footer-button:focus {
   background-color: var(--nav-accent-color);
 }
-
 
 /* =========2 сторінка  ========*/
 .portfolio-section {
@@ -611,12 +606,12 @@ transition: background-color var(--transition-duration-funktion);
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  height: 576px;
+  
   background-color: #fcfcfc;
   opacity: 1;
   transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 50ms,
     transform 600ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  padding: 72px 24px 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -627,6 +622,7 @@ transition: background-color var(--transition-duration-funktion);
   position: absolute;
   top: 24px;
   right: 24px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -680,7 +676,7 @@ transition: background-color var(--transition-duration-funktion);
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 .modal-field-desk {
   display: block;
@@ -703,11 +699,12 @@ transition: background-color var(--transition-duration-funktion);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
+  margin-bottom: 8px;
 }
 
 .modal-field-input:focus {
   outline: none;
-border-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .modal-field-comment {
@@ -716,96 +713,109 @@ border-color: var(--accent-color);
   height: 120px;
   resize: none;
   padding: 8px 16px;
-  margin-bottom: 16px;
+  margin-bottom:16px;
   font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: #000;
   border: 1px solid rgba(46, 47, 66, 0.4);
-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .modal-field-comment:focus {
   outline: none;
-border-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .modal-field-comment::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-form-btn {
-    align-self: center;
-    padding: 16px 32px 16px 32px;
-    min-width: 169px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--just-white);
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    transition: background-color var(--transition-duration-funktion);
-  }
-  
-  .modal-form-btn:hover,
-  .modal-form-btn:focus {
-    background-color: var(--nav-accent-color);
-  }
-
-  .modal-input-wrap {
-   position: relative;
-  }
+.modal-input-wrap {
+  position: relative;
+}
 .modal-input-icon {
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translate(0, -50%);
+  transition: fill var(--transition-duration-funktion);
 }
 
-
-.modal-field-input:focus+.modal-input-icon{
+.modal-field-input:focus + .modal-input-icon {
   fill: var(--accent-color);
 }
 
-.modal-check-desk{
+.modal-check-desk {
   display: flex;
- align-items: center;
-margin-bottom: 24px;
+  align-items: center;
+  margin-bottom: 24px;
   font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-color: #8E8F99;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
-.modal-check-desk::before{
-  content: '';
+.modal-check-desk::before {
+  content: "";
   display: block;
+  
   margin-right: 8px;
+  
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-border-radius: 2px;
-background-color: #ffffff;
-cursor: pointer;
+  border-radius: 2px;
+  background-color: #ffffff;
+  cursor: pointer;
+ transition: border-color var(--transition-duration-funktion);
 }
 
 .modal-check:checked + .modal-check-desk::before {
   background-image: url(../images/check.svg);
   background-color: var(--accent-color);
+  background-origin: border-box;
   background-repeat: no-repeat;
   background-size: 10px 8px;
- background-position: center;
+  background-position: center;
+  border-color: var(--accent-color);
 }
 
 .modal-check:focus + .modal-check-desk::before {
-border-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .privacy-policy-link {
   color: var(--accent-color);
+
+  outline: transparent;
+}
+.privacy-policy-link:hover,
+.privacy-policy-link:focus {
   text-decoration: underline;
-}t
+}
+
+
+.modal-form-btn {
+  align-self: center;
+  padding: 16px 32px 16px 32px;
+  min-width: 169px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--just-white);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color var(--transition-duration-funktion);
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: var(--nav-accent-color);
+  outline: transparent;
+}
